@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+}
+
+
+
+.row {
+    display: flex;
+    margin-bottom: 20px; 
+}
+
+.block {
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-right: 10px; 
+    min-height: 100px; 
+    background-color:rgba(179, 249, 90, 1);
+    ; 
+    position: relative;
+}
+
+.block:last-child {
+    margin-right: 0; 
+}
+
+
+.container {
+display: flex;
+width: 100%;
+gap: 10px; 
+padding: 20px;
+}
+
+.item {
+flex: 1; 
+background-color:rgba(136, 181, 191, 1);
+aspect-ratio: 1;
+}
+
+.btn{
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: white;
+    border: 1px solid rgba(127, 175, 246, 1);
+    background: rgba(127, 175, 246, 1);
+    padding: 15px 0;
+    margin: 20px auto;
+    cursor: pointer;
+    font-size: 30px
+}
+
+.popup{
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+    font-size: 30px;
+    background:rgba(127, 175, 246, 1);
+    color: white;
+    padding: 30px;
+    position: relative;
+    transition: 0.5s all;
+    text-align: center;
+    top: -999px;
+}
+
+#modal{
+    display: none;
+}
+#modal:checked ~ .popup {
+    top: 0;
+}
+
+.close{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    transform: rotate(45deg);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
